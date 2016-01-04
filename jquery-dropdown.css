@@ -1,0 +1,75 @@
+/* --------------------------------------------------------
+Jquery Dropdown
+
+version: 1.0
+created date: 04.01.2016
+last modified: 04.01.2016 by Kamal Somu.A
+author: Kamal Somu
+email: kamalsomu@gmail.com
+----------------------------------------------------------*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.dropdown-wrapper {
+    padding: 15px;
+    cursor: pointer;
+	display: inline-block;
+}
+.dropdown-menu-container
+{
+margin-top: 8px;
+}
+.dropdown-menu-container li {
+    list-style-type: none;
+    padding: 5px;
+}
+.dropdown-menu-container ul {
+    box-shadow: -5px 10px 10px #888888;
+    border: 1px solid #ddd;
+}
+.submenu {
+    position: relative;
+}
+.dropdown-menu-container .menu {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+}
+.menu .submenu > * {
+    display: none;
+}
+.menu .submenu:hover > .menu {
+    display: block;
+    float: left;
+    left: 100%;
+    top: 0%;
+}
+.dropdown-menu-container .menu li:hover {
+    background-color: #6699FF;
+}
+.dropdown-menu-container a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.button {
+    border-radius: 7px;
+    background: #73AD21;
+    padding: 10px;
+    background-color: #f0ad4e;
+}
+.dropdown-arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    display: inline-block;
+}
+.dropdown-hide
+{
+display:none;
+}
